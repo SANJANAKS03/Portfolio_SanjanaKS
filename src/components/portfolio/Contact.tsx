@@ -36,7 +36,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/sanjanaKs2525",
+      url: "https://www.linkedin.com/in/sanjanaKs2525/",
       handle: "sanjanaKs2525"
     }
   ];
