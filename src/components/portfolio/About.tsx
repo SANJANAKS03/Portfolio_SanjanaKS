@@ -35,11 +35,19 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-surface">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-20 bg-surface relative overflow-hidden">
+      {/* Floating Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-float"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-secondary/10 rounded-full animate-pulse-slow"></div>
+        <div className="absolute bottom-40 left-1/4 w-12 h-12 bg-accent/10 rounded-full animate-bounce-slow"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-primary/5 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-gradient">About Me</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-gradient animate-fade-in">About Me</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-slide-up">
             Engineering graduate passionate about creating efficient, scalable solutions 
             and continuously learning new technologies.
           </p>
@@ -47,30 +55,35 @@ const About = () => {
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* About Content */}
-          <div className="animate-slide-up">
+          <div className="animate-slide-in-left">
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Sanjana is from Electrical and Electronics branch but she had a strong interest in software 
-                so she decided to learn software development and pursue a career in technology.
+                My journey began with circuits and electrical systems, but my heart was always drawn 
+                to the world of code. What started as curiosity about how software controls hardware 
+                evolved into a passionate pursuit of creating digital solutions.
               </p>
               <p>
-                My experience spans from developing automated cable sizing tools at Brite Engineering 
-                to creating desktop applications with JavaFX and Spring Boot at Cognitive Technologies. 
-                I thrive on solving complex problems and building efficient systems.
+                From my first "Hello World" in Java to architecting complex Spring Boot applications, 
+                every line of code has been a step forward. At Brite Engineering, I transformed manual 
+                processes into automated solutions, and at Cognitive Technologies, I brought ideas to 
+                life through elegant desktop applications.
               </p>
               <p>
-                I'm particularly interested in Java development, system design, and creating 
-                solutions that bridge the gap between technical complexity and user needs.
+                Today, I'm not just a developer—I'm a problem solver who bridges the gap between 
+                complex technical challenges and user-friendly solutions. My electrical background 
+                gives me a unique perspective on system design and optimization.
               </p>
             </div>
             
             {/* Highlights */}
             <div className="grid sm:grid-cols-2 gap-4 mt-8">
               {highlights.map((highlight, index) => (
-                <Card key={index} className="p-4 hover-lift">
+                <Card key={index} className="p-4 hover-lift card-tilt hover-glow" style={{animationDelay: `${index * 0.1}s`}}>
                   <div className="flex items-start gap-3">
-                    <div className="text-primary mt-1">{highlight.icon}</div>
+                    <div className="text-primary mt-1 animate-scale-in" style={{animationDelay: `${index * 0.2}s`}}>
+                      {highlight.icon}
+                    </div>
                     <div>
                       <h4 className="font-semibold mb-1">{highlight.title}</h4>
                       <p className="text-sm text-muted-foreground">{highlight.description}</p>
@@ -82,15 +95,20 @@ const About = () => {
           </div>
           
           {/* Skills */}
-          <div className="animate-slide-up">
+          <div className="animate-slide-in-right">
             <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
             <div className="space-y-6">
-              {Object.entries(skills).map(([category, skillList]) => (
-                <div key={category}>
+              {Object.entries(skills).map(([category, skillList], categoryIndex) => (
+                <div key={category} className="animate-fade-in" style={{animationDelay: `${categoryIndex * 0.1}s`}}>
                   <h4 className="font-medium mb-3 text-primary">{category}</h4>
                   <div className="flex flex-wrap gap-2">
                     {skillList.map((skill, index) => (
-                      <Badge key={index} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-colors">
+                      <Badge 
+                        key={index} 
+                        variant="secondary" 
+                        className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 cursor-pointer animate-scale-in" 
+                        style={{animationDelay: `${(categoryIndex * skillList.length + index) * 0.05}s`}}
+                      >
                         {skill}
                       </Badge>
                     ))}
