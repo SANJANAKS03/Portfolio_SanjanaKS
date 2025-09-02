@@ -40,7 +40,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-gradient">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Computer Science graduate passionate about creating efficient, scalable solutions 
+            Engineering graduate passionate about creating efficient, scalable solutions 
             and continuously learning new technologies.
           </p>
         </div>
@@ -51,8 +51,8 @@ const About = () => {
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a Computer Science graduate from Dr. Ambedkar Institute of Technology 
-                with a strong foundation in software development and a passion for backend technologies.
+                Sanjana is from Electrical and Electronics branch but she had a strong interest in software 
+                so she decided to learn software development and pursue a career in technology.
               </p>
               <p>
                 My experience spans from developing automated cable sizing tools at Brite Engineering 

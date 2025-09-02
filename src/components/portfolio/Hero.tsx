@@ -44,7 +44,7 @@ const Hero = () => {
               <Mail className="w-4 h-4 mr-2" />
               Contact Me
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="border-white/80 text-white bg-white/10 hover:bg-white hover:text-primary">
               View Projects
             </Button>
           </div>
@@ -57,7 +57,7 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/sanjanaKs2525/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="https://github.com/SANJANAKS03" className="text-white/80 hover:text-white transition-colors">
+            <a href="https://github.com/SANJANAKS03" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
               <Github className="w-6 h-6" />
             </a>
           </div>
