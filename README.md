@@ -1,73 +1,38 @@
-# Welcome to your Lovable project
+# Sanjana KS - Personal Portfolio
 
-## Project info
+Hello there! 👋 This repository contains the source code for my personal portfolio website, a central hub to showcase my skills, projects, and professional experience.
 
-**URL**: https://lovable.dev/projects/b678c9ef-b05a-45ea-bb82-2b45f9f95217
+[cite_start]I am a final-year Electrical and Electronics Engineering student at Dr. Ambedkar Institute of Technology with a strong passion for software development[cite: 6, 7]. [cite_start]My experience includes internships as a Junior Engineer and a Java Developer, where I've honed my skills in backend logic, Java, Spring Boot, and database management[cite: 17, 24, 43, 44]. This portfolio is a reflection of my journey and my capabilities.
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+**[>> Click here to view the live website << (http://192:168:0:182:8080)]**
 
-**Use Lovable**
+## 📸 Screenshot
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b678c9ef-b05a-45ea-bb82-2b45f9f95217) and start prompting.
+![Portfolio Screenshot](https://www.linkedin.com/posts/swadesh-kumar_hiring-sde-jobupdates-activity-7368526535772790784-is1i?utm_source=share&utm_medium=member_android&rcm=ACoAADoIA68B80kxLLRdyObO3BnFDbpd1qzmK2U)
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+* [cite_start]**Project Showcase:** A dedicated section to display my key projects, including the "Transaction Management GUI" [cite: 29] [cite_start]and the "Smart Charge Drive"[cite: 38].
+* **Skills Overview:** Lists my technical skills across multiple domains:
+    * [cite_start]**Languages:** Java, SQL, Python, JavaScript, C, HTML/CSS[cite: 43].
+    * [cite_start]**Backend:** Spring Boot, RDBMS (MySQL), OOP[cite: 44].
+    * [cite_start]**Frontend:** JavaScript, JavaFX, HTML/CSS[cite: 45].
+    * [cite_start]**Cloud/DevOps:** AWS (ML Fundamentals), Docker, Git, GitHub[cite: 46].
+* [cite_start]**Experience Timeline:** Details my internship experiences at Brite Engineering Control Switchgears Pvt.Ltd [cite: 17] [cite_start]and Cognifyz Technologies[cite: 24].
+* [cite_start]**Direct Contact & Social Links:** Easy access to my GitHub, LinkedIn, and email for networking and contact[cite: 3].
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* **Frontend:** TypeScript, HTML5, CSS3
+* **Deployment:** Vercel 
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📫 Connect with Me
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+You can reach out to me through any of the following channels. I'm always open to new opportunities and collaborations.
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b678c9ef-b05a-45ea-bb82-2b45f9f95217) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+* [cite_start]**📧 Email:** [sanjanakssanju11@gmail.com](mailto:sanjanakssanju11@gmail.com) [cite: 3]
+* [cite_start]**💼 LinkedIn:** [linkedin.com/in/sanjanaks2525](https://linkedin.com/in/sanjanaks2525/) [cite: 3]
+* [cite_start]**💻 GitHub:** [github.com/SANJANAKS03](https://github.com/SANJANAKS03) [cite: 3]
